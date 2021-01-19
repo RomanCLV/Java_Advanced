@@ -1,5 +1,6 @@
 package main.exercice1;
 
+
 public class Square extends Shapes {
 
     private double side;
