@@ -1,8 +1,8 @@
 package main.exercice7;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.BiFunction;
 
 public class Main {
 
@@ -34,5 +34,17 @@ public class Main {
             else return 0;
         });
         print.run();
+    }
+
+    private static void lesson() {
+
+        BiFunction<Integer, Integer, Long> sum = (val1, val2) -> (long) val1 + val2;
+
+        Consumer<String> display = (String param) -> System.out.println(param);
+
+        Runnable myTreatment = () -> {
+            System.out.println("traitement 1");
+            System.out.println("traitement 2");
+        };
     }
 }
